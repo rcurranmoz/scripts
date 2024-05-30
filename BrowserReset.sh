@@ -2,6 +2,8 @@
 
 # 2021
 
+# For use with Jamf. Pass env variable
+
 # Kills Chrome and Safari
 killall Safari && killall Google\ Chrome
 
