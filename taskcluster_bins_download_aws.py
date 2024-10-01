@@ -48,6 +48,9 @@ if response.status_code == 200:
             # Replace 'darwin' with the version number
             new_name = re.sub(r'darwin', version, asset_name)
 
+            # Replace 'insecure' with 'simple' in the file name
+            new_name = re.sub(r'insecure', 'simple', new_name)
+
             # Build full file paths
             download_url = asset['browser_download_url']
             save_path = os.path.join(download_dir, new_name)
